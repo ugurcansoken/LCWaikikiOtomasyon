@@ -1,6 +1,7 @@
 package Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,12 @@ public WebDriver driver;
 
 }
 
+   @AfterAll
+    public void tearDown() {
+       driver.quit();
 
 
-}
+   }
+    }
+
+
